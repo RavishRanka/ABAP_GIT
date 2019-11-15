@@ -18,5 +18,6 @@ CLASS ZCL_RR_TEST_ABAPGIT_1 IMPLEMENTATION.
   METHOD  if_oo_adt_classrun~main.
    out->write( 'Hello ABAP GIT world from STEAMPUNK' ).
    out->write('This added in On Premise').
+   out->write('This added from GITHUB EDITOR').
   ENDMETHOD.
 ENDCLASS.

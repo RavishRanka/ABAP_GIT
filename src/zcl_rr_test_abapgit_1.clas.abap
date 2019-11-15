@@ -4,7 +4,8 @@ CLASS zcl_rr_test_abapgit_1 DEFINITION
   CREATE PUBLIC .
 
 PUBLIC SECTION.
-METHODS main.
+  INTERFACES if_oo_adt_classrun.
+
 PROTECTED SECTION.
 PRIVATE SECTION.
 ENDCLASS.
@@ -12,8 +13,8 @@ ENDCLASS.
 
 
 CLASS zcl_rr_test_abapgit_1 IMPLEMENTATION.
-  METHOD main.
-write 'Hello ABAP GIT world'.
+  METHOD  if_oo_adt_classrun~main.
+   out->write( 'Hello ABAP GIT world' ).
   ENDMETHOD.
 
 ENDCLASS.
